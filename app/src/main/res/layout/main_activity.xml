@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        tools:context="com.vchohan.androidexamples.MainActivity">
+
+    <Button
+            android:id="@+id/ListViewButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/list_view_example" />
+
+    <Button
+            android:id="@+id/RecyclerViewButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recycler_view_example" />
+
+    <Button
+            android:id="@+id/CardViewButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/card_view_example" />
+
+    <Button
+            android:id="@+id/CustomViewButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_view_example" />
+
+    <Button
+            android:id="@+id/dataBindingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/data_binding_example" />
+
+    <Button
+            android:id="@+id/modelViewPresenterButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/model_view_presenter_example" />
+
+</LinearLayout>
