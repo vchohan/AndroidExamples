@@ -1,25 +1,51 @@
 package com.vchohan.androidexamples;
 
+import android.databinding.BaseObservable;
+import android.view.View;
+
 /**
  * Created by vchohan on 3/31/17.
  */
 
-public class DataBindingJavaObject {
+public class DataBindingJavaObject extends BaseObservable {
 
-    public final String pageTitle;
+    private String pageTitle;
+
+    private String someText;
 
     public final String firstName;
 
     public final String lastName;
 
-    public DataBindingJavaObject(String pageTitle, String firstName, String lastName) {
-        this.pageTitle = pageTitle;
-        this.firstName = firstName;
-        this.lastName = lastName;
+    private View.OnClickListener onClickListener;
+
+    public View.OnClickListener getOnClickListener() {
+        return onClickListener;
+    }
+
+    public void setOnClickListener(View.OnClickListener onClickListener) {
+        this.onClickListener = onClickListener;
     }
 
     public String getPageTitle() {
         return pageTitle;
+    }
+
+    public void setPageTitle(String pageTitle) {
+        this.pageTitle = pageTitle;
+    }
+
+    public String getSomeText() {
+        return someText;
+    }
+
+    public void setSomeText(String someText) {
+        this.someText = someText;
+    }
+
+    public DataBindingJavaObject(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     public String getFirstName() {
