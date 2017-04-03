@@ -18,6 +18,10 @@
                 android:name=".DataBindingActivity"
                 android:label="@string/data_binding_example"
                 android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".ListViewActivity"
+                android:label="@string/list_view_example"
+                android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

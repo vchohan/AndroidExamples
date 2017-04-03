@@ -8,6 +8,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private Button mListViewButton;
+
     private Button mDataBindingButton;
 
     @Override
@@ -15,7 +17,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
-        mDataBindingButton = (Button) findViewById(R.id.dataBindingButton);
+
+        mListViewButton = (Button) findViewById(R.id.list_view_button);
+        mListViewButton.setOnClickListener(this);
+
+        mDataBindingButton = (Button) findViewById(R.id.data_binding_button);
         mDataBindingButton.setOnClickListener(this);
 
     }
@@ -24,7 +30,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         Intent intent;
         switch (v.getId()) {
-            case R.id.dataBindingButton:
+            case R.id.list_view_button:
+                intent = new Intent(MainActivity.this, ListViewActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+                break;
+            case R.id.data_binding_button:
                 intent = new Intent(MainActivity.this, DataBindingActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
