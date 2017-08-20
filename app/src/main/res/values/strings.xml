@@ -10,6 +10,7 @@
     <string name="custom_view_example">Custom View Example</string>
     <string name="data_binding_example">Data Binding Example</string>
     <string name="model_view_presenter_example">Model View Presenter Example</string>
+    <string name="movable_activity_example">Movable Example</string>
 
     <!-- Data Binding Strings -->
 

@@ -42,4 +42,10 @@
             android:layout_height="wrap_content"
             android:text="@string/model_view_presenter_example" />
 
+    <Button
+            android:id="@+id/movable_activity_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/movable_activity_example" />
+
 </LinearLayout>

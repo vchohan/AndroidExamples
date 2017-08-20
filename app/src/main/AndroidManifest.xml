@@ -18,9 +18,13 @@
                 android:name=".DataBindingActivity"
                 android:label="@string/data_binding_example"
                 android:parentActivityName=".MainActivity" />
-
-        <activity android:name=".ListViewActivity"
+        <activity
+                android:name=".ListViewActivity"
                 android:label="@string/list_view_example"
+                android:parentActivityName=".MainActivity" />
+        <activity
+                android:name=".MovableActivity"
+                android:label="@string/movable_activity_example"
                 android:parentActivityName=".MainActivity" />
     </application>
 

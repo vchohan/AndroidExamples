@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button mDataBindingButton;
 
+    private Button mMovableActivityButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +25,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mDataBindingButton = (Button) findViewById(R.id.data_binding_button);
         mDataBindingButton.setOnClickListener(this);
+
+        mMovableActivityButton = (Button) findViewById(R.id.movable_activity_button);
+        mMovableActivityButton.setOnClickListener(this);
 
     }
 
@@ -37,6 +42,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.data_binding_button:
                 intent = new Intent(MainActivity.this, DataBindingActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+                break;
+            case R.id.movable_activity_button:
+                intent = new Intent(MainActivity.this, MovableActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 break;
